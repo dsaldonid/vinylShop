@@ -1,0 +1,18 @@
+#issue-select{
+    width: 12em;
+}
+
+#writtenFeedback{
+    height: 10em;
+}
+
+#stack{
+    border: 3ex;
+    width: 10em;
+}
+
+#paper{
+    border-color: black;
+    color: black;
+    border-width: 1em;
+}
