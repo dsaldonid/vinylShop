@@ -49,7 +49,7 @@ export default function Navbar() {
                             <MenuItem onClick={()=>navigate("/profile")}>Profile</MenuItem>
                             <MenuItem onClick={()=>navigate("/catalog")}>Catalog</MenuItem>
                             <MenuItem onClick={()=>navigate("/cart")}>Cart</MenuItem>
-                            <MenuItem onClick={()=>navigate("/settings")}> Settings</MenuItem>
+                            <MenuItem onClick={()=>navigate("/settings")}> Payments and Advanced Settings</MenuItem>
                             <MenuItem onClick={()=>navigate("/")}>Logout</MenuItem>
                     </Menu>
                 </Box>

@@ -2,9 +2,13 @@ import { Button, Chip,Box, InputLabel, MenuItem, Paper, Select, Stack, TextField
 import { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import './UserProfile.css'
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+import { useNavigate } from "react-router-dom"
 
 export default function UserProfile() {
     const [problem, setProblem] = useState(null);
+    const navigate = useNavigate()
+
     const [value, setValue] = useState('');
 
     const handleChange = (event) => {
@@ -19,6 +23,8 @@ export default function UserProfile() {
             <Typography variant="h2">
                 Welcome Diego
             </Typography>
+            <QuestionMarkIcon onClick={()=>{alert("Learn more about the user page, video to come!")}}></QuestionMarkIcon>
+            <Button onClick={()=>navigate('/catalog')}>Go to Catalog</Button>
             <Typography variant="h2">
                 Previous Orders
             </Typography>

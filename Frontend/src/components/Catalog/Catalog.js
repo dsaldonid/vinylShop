@@ -1,6 +1,8 @@
 import { Box, Button, Card, TextField, Typography } from "@mui/material";
-import Navbar from "./Navbar/Navbar";
+import Navbar from "../Navbar/Navbar";
 import './Catalog.css'
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+
 export default function Catalog() {
     return (
         <div className="Catalog">
@@ -12,6 +14,7 @@ export default function Catalog() {
                 <Typography variant="h3" mt={3.5}>
                     Catalog
                 </Typography>
+                <QuestionMarkIcon onClick={()=>{alert("Learn more about our catalog, video to come!")}}></QuestionMarkIcon>
                 <Box my={3}>
                     <TextField
                         id="search"
@@ -20,6 +23,7 @@ export default function Catalog() {
                         variant="standard"
                     />
                 </Box>
+                <Button>Go to Cart</Button>
             </Box>
             <Box m={5}
             display="flex">
